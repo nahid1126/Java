@@ -13,11 +13,6 @@ public class Thread1 extends Thread{
     void multi(int n){
         for (int i=1;i<=n;i++) {
             System.out.println("Thered1: ");
-            try {
-                Thread.sleep(400);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
         }
     }
 }

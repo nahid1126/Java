@@ -26,5 +26,9 @@ public class ThreadInLambda {
             e.printStackTrace();
         }
         t2.start();
+
+        Thread t3 = new Thread(()->{
+
+        });
     }
 }

@@ -9,8 +9,8 @@ public class SynchronizedMethod extends Thread{
         this.s = s;
     }
 
-   synchronized void print(int m,String s){
-        for(int i=1;i<=10;i++){
+   public synchronized void print(int m,String s){
+        for(int i=1;i<=4;i++){
             System.out.println(s+": "+i*m);
         }
     }

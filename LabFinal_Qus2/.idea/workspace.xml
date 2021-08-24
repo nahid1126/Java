@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef8fcd2b-839b-46e1-9dfb-d4bf18ed94a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Covid-19/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Covid-19/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Covid-19/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Covid-19/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Covid-19/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Covid-19/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Covid-19/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Covid-19/Covid-19.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LabFinal_Qus2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LabFinal_Qus2/Nahid/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LabFinal_Qus2/Nahid/qus2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Nahid/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Nahid/qus2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Nahid/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab_Final/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab_Final/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab_Final/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab_Final/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab_Final/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab_Final/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab_Final/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab_Final/Lab_Final.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab_Final/src/Nahid/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Thread/src/Nahid/ct/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Thread/src/Nahid/ct/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Thread/src/Nahid/ct/Try2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Thread/src/Nahid/ct/Try3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Thread/src/Nahid/innerClass/InnerClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File/out/production/File/com/Nahid/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../File/out/production/File/com/Nahid/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File/out/production/File/com/Nahid/company/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../File/out/production/File/com/Nahid/company/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File/out/production/File/com/Nahid/company/test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../File/out/production/File/com/Nahid/company/test1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File/out/production/File/com/Nahid/company/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../File/out/production/File/com/Nahid/company/test2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File/src/com/Nahid/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../File/src/com/Nahid/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File/src/com/Nahid/company/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../File/src/com/Nahid/company/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File/src/com/Nahid/company/test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../File/src/com/Nahid/company/test1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File/src/com/Nahid/company/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../File/src/com/Nahid/company/test2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/out/production/Thread/Nahid/Thread1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/Nahid/Thread1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/out/production/Thread/Nahid/Thread2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/Nahid/Thread2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/out/production/Thread/Nahid/Thread_With_Lamda/ThreadInLambda.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/Nahid/Thread_With_Lamda/ThreadInLambda.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/out/production/Thread/Nahid/Thread_With_SynchronizedMethos/SynchronizedMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/Nahid/Thread_With_SynchronizedMethos/SynchronizedMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/out/production/Thread/Nahid/Thread_With_SynchronizedMethos/SynchronizedThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/out/production/Thread/Nahid/Thread_With_SynchronizedMethos/SynchronizedThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/src/Nahid/Thread1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/src/Nahid/Thread1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/src/Nahid/Thread2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/src/Nahid/Thread2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/src/Nahid/Thread_With_Lamda/ThreadInLambda.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/src/Nahid/Thread_With_Lamda/ThreadInLambda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/src/Nahid/Thread_With_SynchronizedMethos/SynchronizedMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/src/Nahid/Thread_With_SynchronizedMethos/SynchronizedMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/src/Nahid/Thread_With_SynchronizedMethos/SynchronizedThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/src/Nahid/Thread_With_SynchronizedMethos/SynchronizedThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/src/Nahid/Thred_With_Interface/ThreadInInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/src/Nahid/Thred_With_Interface/ThreadInInterface.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1x9yyGSIoAvR07X4DaLXO0bUATa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Nahid.Main" />
+      <module name="LabFinal_Qus2" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef8fcd2b-839b-46e1-9dfb-d4bf18ed94a3" name="Default Changelist" comment="" />
+      <created>1629781853202</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629781853202</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1629782948378">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1629782948378" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1629782948378">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1629782948378" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1629782948377">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1629782948377" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1629782948378">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1629782948378" />
+  </component>
+</project>

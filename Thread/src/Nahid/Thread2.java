@@ -13,11 +13,6 @@ public class Thread2 extends Thread{
      void print(int m) {
         for(int i=1;i<=m;i++){
             System.out.println("hello nahid i'm form thread2");
-            try {
-                Thread.sleep(400);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
         }
     }
 }
