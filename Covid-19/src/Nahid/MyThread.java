@@ -1,5 +1,7 @@
 package Nahid;
-
+////Name: Nahid Hasan
+////ID: 04170201126
+////Mail: nahidnub1126@gmail.com
 public class MyThread extends Thread{
     String thName;
 
