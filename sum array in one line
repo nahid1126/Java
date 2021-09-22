@@ -1,0 +1,26 @@
+//sum of all student id in arraylist || arraylis comes from model
+static List<Model> studentModelList = new ArrayList<>();
+
+        @RequiresApi(api = Build.VERSION_CODES.N)
+        public int getIdSum () {
+            return studentModelList
+                    .stream()
+                    .mapToInt(StudentModel::getStudentId)
+                    .sum();
+        }
+
+        //get name into arraylist and save another array
+        public void getIdSum () {
+            String[] names = studentModelList
+                    .stream()
+                    .map(StudentModel::getStudentName)
+                    .toArray(String[]::new);
+        }
+
+        //get id into arraylist and save another array
+        public int[] getIdSum () {
+            return studentModelList
+                    .stream()
+                    .mapToInt(StudentModel::getStudentId)
+                    .toArray();
+        }
