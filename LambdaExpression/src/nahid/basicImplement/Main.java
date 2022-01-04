@@ -1,4 +1,4 @@
-package nahid;
+package nahid.basicImplement;
 
 interface LambdaExp { //functional interface without parameter
     //functional interface means here will be only one abstract method
