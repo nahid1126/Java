@@ -1,5 +1,7 @@
 package nahid.pre_defined_functional_interface;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Predicate;
 
 //predicate interface & it will have only one abstract method name test & it takes one parameter and return boolean
@@ -20,5 +22,35 @@ public class PredicateInterface {
                 System.out.println(name);
             }
         }
+
+        Suffix suffix = new Suffix("Nahid", 20000, 1);
+        Predicate<Suffix> suffixPredicate = e -> (e.salary > 15000 && e.exp >= 2);
+
+        if (suffixPredicate.test(suffix)) System.out.println(suffix.name);
+        else System.out.println("you are less salary or experience");
+
+
+        List<Suffix> suffixList = new ArrayList<>();
+
+        suffixList.add(new Suffix("Nahid", 20000, 1));
+        suffixList.add(new Suffix("Joy", 30000, 2));
+        suffixList.add(new Suffix("Bhuiyan", 30000, 3));
+        suffixList.add(new Suffix("Naimur", 30000, 3));
+
+
+        for (Suffix s : suffixList) {
+            if (suffixPredicate.test(s)) System.out.println(s.name + " " + s.salary);
+        }
+    }
+}
+
+class Suffix {
+    String name;
+    int salary, exp;
+
+    public Suffix(String name, int salary, int exp) {
+        this.name = name;
+        this.salary = salary;
+        this.exp = exp;
     }
 }
