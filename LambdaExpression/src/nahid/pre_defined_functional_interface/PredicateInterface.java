@@ -23,11 +23,12 @@ public class PredicateInterface {
             }
         }
 
-        Suffix suffix = new Suffix("Nahid", 20000, 1);
-        Predicate<Suffix> suffixPredicate = e -> (e.salary > 15000 && e.exp >= 2);
 
-        if (suffixPredicate.test(suffix)) System.out.println(suffix.name);
-        else System.out.println("you are less salary or experience");
+        Predicate<Suffix> suffixPredicate = e -> (e.salary > 15000 && e.exp >= 2);
+        Suffix suffix = new Suffix("Nahid", 20000, 1);
+
+        String x = suffixPredicate.test(suffix) ? suffix.name : "you are less salary or experience";
+        System.out.println(x);
 
 
         List<Suffix> suffixList = new ArrayList<>();

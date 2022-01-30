@@ -30,6 +30,9 @@ public class Main {
         };
 
         System.out.println(withParameter.tryLambda(8, 5));
+
+        withParameter = (a, b) -> (a * b);
+        System.out.println(withParameter.tryLambda(8, 5));
         System.out.println(withParameter.lambdaTry("nahid"));
     }
 }
