@@ -1,4 +1,4 @@
-package nahid.pre_defined_functional_interface;
+package nahid.predicatel_interface;
 
 import java.util.ArrayList;
 import java.util.List;
