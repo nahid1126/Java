@@ -1,4 +1,4 @@
-package nahid.multiple_predicate;
+package nahid.predicate_interface.multiple_predicate;
 
 import java.util.function.Predicate;
 
