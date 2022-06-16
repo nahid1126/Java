@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/main_layout}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div layout:fragment="content" class="container mySpace roleCustomize">
+
+		<table class="table">
+			<tr>
+				<th>Leave Policy Type</th>
+				<th>Leave Policy Description</th>
+				<th>Action</th>
+			</tr>
+			<tr th:each="policy : ${policyList}">
+				<td th:text="${policy.leaveType}"></td>
+				<td th:text="${policy.leavePolicyDescription}"></td>
+			</tr>
+		</table>
+		<ul class="nav nav-pills">
+			<li class="nav-item"
+				th:each="i : ${#numbers.sequence(0, policyList.totalPages-1)}"><a
+				th:href="${'?page='+i}" th:text="${i}" class="nav-link"
+				th:classappend="${policyLists}==${i}?'active':''"></a></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/main_layout}">
+<head>
+<meta charset="ISO-8859-1">
+<title>list of leave application</title>
+
+</head>
+<body>
+	<div layout:fragment="content" class="container mySpace">
+	<table class="table table-hober">
+<thead class="bg-primary">
+		<tr>
+			<th>ID</th>
+			<th>fromDate</th>
+			<th>toDate</th>
+			<th>leaveType</th>
+			<th>reason</th>
+			<th>duration</th>
+			<th>UserName</th>
+			<th>Email</th>
+			<th>Comments</th>
+			<th>Action</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr th:each="leave : ${LeaveRequest}">
+			<td th:text="${leave.leave_id}"></td>
+		    <td th:text="${#dates.format(leave.fromDate, 'yyyy-MM-dd')}"></td>
+			<td th:text="${#dates.format(leave.toDate, 'yyyy-MM-dd')}"></td>
+			<td th:text="${leave.leaveType}"></td>
+			<td th:text="${leave.reason}"></td>
+			<td th:text="${leave.duration}"></td>
+			<td th:text="${leave.users.username}"></td>
+			<td th:text="${leave.users.email}"></td>
+			<td th:text="${leave.comments}"></td>
+			<td th:text="${leave.AcceptRejectFlag}"></td>
+		</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
+</html>

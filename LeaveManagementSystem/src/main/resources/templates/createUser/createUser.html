@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/main_layout}">
+<head>
+<meta charset="ISO-8859-1">
+<title>UserRegistration</title>
+</head>
+<body>
+	<div layout:fragment="content" class="container mySpace">
+	<div align="center">
+		<h1>Create new user</h1>
+		<br>
+		 <form action="#" th:action="@{/success}" th:object="${user}" method="post" enctype="multipart/form-data"> 
+		<!--  <form action="#" th:action="@{/success}" th:object="${user}" method="post" > -->
+    <table class="table">
+        <tr>
+            <td>UserName</td>
+            <td><input type="text" th:field="*{username}" /></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" th:field="*{password}" /></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" th:field="*{email}" /></td>
+        </tr>
+         <tr>
+            <td>Image</td>
+            <td><input type="file" th:field="*{userImage}" /></td>
+        </tr> 
+      
+        <tr>
+            <td>Role</td>
+            <td><select  th:field="*{roles}" >
+                <option th:each="nam:${employeeRoles}" th:value="${nam.id}" th:text="${nam.name}"></option>
+          </select></td>
+        </tr>
+        <tr>
+            <td>Department</td>
+            <td><select  th:field="*{departments}">
+			   <option th:each="nam:${department}" th:value="${nam.id}" th:text="${nam.name}"></option>
+          </select></td>
+        </tr> 
+        <tr>
+ 
+        <tr>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+    </form>
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/main_layout}">
+<head>
+<meta charset="ISO-8859-1">
+<title>User List</title>
+</head>
+<body>
+	<div layout:fragment="content" class="container mySpace">
+		<form th:action="@{/viewUser}" class="form-inline mt-2">
+			<div class="form-group mb-2">
+				<input type="text" class="form-control" name="name"
+					placeholder="Search User Departments Name" /> <input type="submit"
+					value="Search" class="btn btn-primary" />
+			</div>
+		</form>
+		<h1 class="dispaly-4 text-center">User List</h1>
+		<div class="card mt-4">
+			<div class="card card-body">
+				<table class="table table-hover">
+					<tr>
+						<th>ID</th>
+						<th>UserName</th>
+						<th>Email</th>
+						<th>Role</th>
+						<th>Departments</th>
+						<th>Action</th>
+					</tr>
+					<tr th:each="u : ${user}">
+						<td th:text="${u.user_id}"></td>
+						<td th:text="${u.username}"></td>
+						<td th:text="${u.email}"></td>
+						 <td th:text="${u.roles.name}"></td>
+						<td th:text="${u.departments.name}"></td>
+						<td><a th:href="@{'/deleteUser/'+${u.user_id}}"class="btn btn-danger" ><i class="fas fa-trash"></i></a> 
+						<a	th:href="@{'/u/'+${u.user_id}}" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+					</tr>
+				</table>
+				 <ul class="nav nav-pills">
+					<li class="nav-item"
+						th:each="i : ${#numbers.sequence(0, user.totalPages-1)}"><a
+						th:href="${'?page='+i}" th:text="${i}" class="nav-link"
+						th:classappend="${users}==${i}?'active':''"></a></li>
+				</ul> 
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

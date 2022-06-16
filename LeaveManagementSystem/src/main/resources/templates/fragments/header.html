@@ -1,0 +1,62 @@
+<header th:fragment="header" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+
+	<!-- Static navbar -->
+	<nav
+		class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light"
+		id="ftco-navbar">
+		<div class="container d-flex align-items-center">
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#ftco-nav">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<a class="navbar-brand" href="/">LMS</a>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a href="/" class="nav-link pl-0">Home</a></li>
+					<li sec:authorize="hasRole('ROLE_ADMIN')" class="nav-item"><a
+						href="/createuser" class="nav-link">Create User</a></li>
+					<li sec:authorize="hasRole('ROLE_ADMIN')" class="nav-item"><a
+						href="/viewUser" class="nav-link">View User</a></li>
+						<li sec:authorize="hasAnyRole('ROLE_SUPERVISOR','ROLE_USER')"
+						class="nav-item"><a href="/allLeavePolicy" class="nav-link">Leave Policy</a></li>
+					<li sec:authorize="hasRole('ROLE_ADMIN')" class="nav-item"><a
+						href="/jsoncalendar" class="nav-link">Calendar</a></li>
+					<li sec:authorize="hasAnyRole('ROLE_ADMIN','ROLE_SUPERVISOR')" class="nav-item"><a
+						href="/leaveaccepting" class="nav-link">Leave Report</a></li>
+					<li sec:authorize="hasAnyRole('ROLE_SUPERVISOR','ROLE_USER')"
+						class="nav-item"><a href="/calendar" class="nav-link">View
+							Calendar</a></li>
+					<li sec:authorize="hasAnyRole('ROLE_SUPERVISOR','ROLE_USER')"
+						class="nav-item"><a href="/apply_leave" class="nav-link">Apply
+							Leave</a></li>
+							<li sec:authorize="hasRole('ROLE_ADMIN')" class="nav-item"><a
+						href="/leavePending" class="nav-link">Pending Application List</a></li>
+					<li sec:authorize="hasRole('ROLE_SUPERVISOR')" class="nav-item"><a
+						href="/userleavePending" class="nav-link">Comments Application List</a></li>
+					<li sec:authorize="hasAnyRole('ROLE_SUPERVISOR','ROLE_USER')"
+						class="nav-item"><a href="/leaveStatus" class="nav-link">Leave
+							Status</a></li>
+
+					<li   class="nav-item dropdown " style="display: right;"><a
+						class="nav-link dropdown-toggle" data-toggle="dropdown">
+						<span>More<i class="far fa-caret-square-down"></i>
+						</span></a>
+						<ul class="dropdown-menu">
+						    <li sec:authorize="hasRole('ROLE_ADMIN')"><a href="/leavepolicy">Add Leave Policy</a></li>
+							<li sec:authorize="hasRole('ROLE_ADMIN')"><a href="/createDepartment">Add Department</a></li>
+							<li sec:authorize="hasRole('ROLE_ADMIN')"><a href="/roleCreation">Add Role</a></li>
+							<li sec:authorize="hasAnyRole('ROLE_SUPERVISOR','ROLE_USER')"><a href="/profile">Edit Profile</a></li>
+							<li ><a th:href="@{/logout}" href="#">Logout</a></li>
+						</ul></li>
+					<!-- <li class="nav-item"><a th:href="@{/logout}" href="#"
+						class="nav-link">Logout</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+</header>

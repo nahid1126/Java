@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/main_layout}">
+<head>
+<meta charset="ISO-8859-1">
+<title>list of leave application</title>
+</head>
+<body>
+	<div layout:fragment="content" class="container mySpace">
+	
+		<form action="#" th:action="@{/approvesuccess}" th:object="${leaveRequest}"  method="post">
+		<input type="hidden" th:field="*{leave_id}" /><br>
+		<input type="hidden" th:field="*{fromDate}" /><br>
+		<input type="hidden" th:field="*{toDate}" /><br>
+		<select style="display:none" th:field="*{leaveType}">
+							<option value="">select</option>
+							<option value="Sick">Sick</option>
+							<option value="Family">Family</option>
+							<option value="Other">Other</option>
+					</select><br>
+					<input type="hidden" th:field="*{reason}" /><br>
+					<input type="hidden" th:field="*{duration}" /><br>
+		
+			<textarea style="display:none" rows="10" cols="20"  th:field="*{comments}" > Provide Comments</textarea>
+			<input type="text" th:field="*{AcceptRejectFlag}" /><br>
+			<br>
+			<input type="hidden" th:field="*{users.user_id}" value="${leave.users.user_id}"> 
+			
+			<input type="submit" value="Action" />
+		</form>
+
+	</div>
+</body>
+</html>

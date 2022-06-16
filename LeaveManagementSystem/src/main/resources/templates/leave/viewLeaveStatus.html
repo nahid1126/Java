@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/main_layout}">
+<head>
+
+</head>
+<body>
+	<div layout:fragment="content" class="container mySpace">
+	<table class="table table-hober">
+	<thead class="bg-primary">
+		<tr>
+			<th>ID</th>
+			<th>fromDate</th>
+			<th>toDate</th>
+			<th>leaveType</th>
+			<th>reason</th>
+			<th>duration</th>
+			<th>Action</th>
+			<th>Duration</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr th:each="l:${leaveRequest}">
+			<td th:text="${l.leave_id}"></td>
+			<td th:text="${l.fromDate}"></td>
+			<td th:text="${l.toDate}"></td>
+			<td th:text="${l.leaveType}"></td>
+			<td th:text="${l.reason}"></td>
+			<td th:text="${l.duration}"></td> 
+			<td th:text="${l.AcceptRejectFlag}"></td>
+			<td th:text="${l.duration}"></td>
+			
+		</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
+</html>

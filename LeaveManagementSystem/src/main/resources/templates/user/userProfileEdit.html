@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/main_layout}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div layout:fragment="content" class="container">
+
+		<div class="container bootstrap snippet mySpace">
+			<div class="text-left">
+				<img class="rounded-circle" th:src="@{/profilePic/{image}(image=${emp.profilePic})}"  width="200" height="200">
+				<h6>Upload a different photo...</h6>
+				<input type="file" class="text-center center-block file-upload" />
+			</div>
+
+			<hr />
+			<div class="row">
+				<div class="col-md-6">
+					<label for="username">User Name : <span
+						th:text="${emp.username}"></span></label><br /> <label for="department">Department
+						: <span th:text="${emp.departments.name}"></span>
+					</label><br />
+				</div>
+
+				<div class="col-md-6">
+					<label for="email">Email : <span th:text="${emp.email}"></span></label><br />
+					<label for="role">Role : <span th:text="${emp.roles.name}"></span></label><br />
+				</div>
+				<button class="btn btn-primary">Reset Password</button>
+
+			</div>
+		</div>
+		<!-- <span th:text="${profilePic}">Hello</span> -->
+</body>
+</html>

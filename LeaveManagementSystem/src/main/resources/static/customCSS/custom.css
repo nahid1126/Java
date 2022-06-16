@@ -1,0 +1,41 @@
+
+.fullPage{
+	background-color:silver;
+	margin-top: 50px;
+	padding:100px;
+	width: 600px;
+}
+.mySpace{
+	height: 500px;
+}
+.customizeColor{
+	
+	width: 300px;
+}
+.buttonColor{
+	background-color: white;
+}
+.textColor{
+	 margin-left: 12px;
+}
+.formSize{
+	border:10px;
+	height: 25px;
+}
+.input-group-addon{
+		max-width: 56px;
+	}
+.iconSize{
+	height: 55px;
+	}
+.btn-block{
+	    height:50px;
+    width:278px;
+    margin-left: 12px;
+        
+	}
+	
+.roleCustomize{
+	height:530px;
+    width:1200px;
+}

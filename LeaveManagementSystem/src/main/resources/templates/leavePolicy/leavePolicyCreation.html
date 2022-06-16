@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/main_layout}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Leave policy Creation</title>
+
+</head>
+<body>
+	<div layout:fragment="content" class="container mySpace">
+		<div align="center" class="roleCustomize">
+			<h1>Leave Policy Creation</h1>
+			<br>
+			<form class="form-horizontal" action="#"
+				th:action="@{/policyCreatesuccessful}" th:object="${leavePolicy}"
+				method="post">
+				<fieldset>
+
+					<div class="form-group">
+						<div class="col-md-5">
+							<input th:field="*{leaveType}" type="text"
+								placeholder="Leave Policy Type" class="form-control input-md"
+								required="Required Leave Policy Type">
+
+						</div>
+					</div>
+
+					<!-- Textarea -->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="textarea">Description</label>
+						<div class="col-md-4">
+							<textarea class="form-control" id="textarea" th:field="*{leavePolicyDescription}" ></textarea>
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for=""></label>
+						<div class="col-md-4">
+							<button id="" name="" class="btn btn-primary">Submit</button>
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
