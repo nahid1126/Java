@@ -32,6 +32,7 @@ public class FilterWithObject {
         productList.stream().filter(p -> p.price > 28000).forEach(p -> System.out.println("ID : " + p.id + " Name : " + p.name + " Price : " + p.price));
 
         List<Product> list = productList.stream().filter(p -> p.price > 28000).collect(Collectors.toList());
+        System.out.println("ID : " + list.get(2).id + " Name : " + list.get(2).name + " Price : " + list.get(2).price);
 
     }
 }
