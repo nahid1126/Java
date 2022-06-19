@@ -1,7 +1,9 @@
 package nahid.Map;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 class Employee {
@@ -14,17 +16,73 @@ class Employee {
         this.name = name;
         this.salary = salary;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" + "id=" + id + ", name='" + name + '\'' + ", salary=" + salary + '}';
+    }
 }
 
 public class FilterWithMap {
+    static int total;
+    static Employee employee1;
+
     public static void main(String[] args) {
         List<Employee> employeeList = Arrays.asList(new Employee(1, "Nahid", 20000),
                 new Employee(2, "Naimur", 30000),
-                new Employee(3, "Joy", 25000),
-                new Employee(4, "Bhuiyan", 30000),
-                new Employee(5, "Sabbir", 10000));
+                new Employee(1, "Nahid", 25000),
+                new Employee(2, "Naimur", 10000),
+                new Employee(3, "Sabbir", 10000));
 
-        List<String> nameList = employeeList.stream().filter(s -> s.salary > 18000).map(s -> s.name).collect(Collectors.toList());
-        System.out.println(nameList);
+        //find the first employee which salary is below 18k
+        //String nameList = employeeList.stream().filter(s -> s.salary <18000).map(Employee::getName).findFirst().get();
+
+        //all employees total salary
+        // int total_salary = employeeList.stream().mapToInt(Employee::getSalary).sum();
+
+        //first map with groupingBy id how many user are same id and then sum total salary
+        Map<Integer, List<Employee>> employee = employeeList.stream().collect(Collectors.groupingBy(Employee::getId));
+
+        List<Employee> newEmployee = new ArrayList<>();
+
+
+        employee.forEach((key, value) -> {
+            total = 0;
+            value.forEach(emp -> {
+                employee1 = emp;
+                total += emp.getSalary();
+            });
+            newEmployee.add(new Employee(employee1.getId(), employee1.getName(), total));
+        });
+
+        System.out.println(newEmployee);
+
+        //how many employee are same name
+        Map<String,Long> sameName = employeeList.stream().collect(Collectors.groupingBy(Employee::getName,Collectors.counting()));
+        System.out.println(sameName);
     }
 }
