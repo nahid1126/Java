@@ -52,20 +52,30 @@ public class FilterWithMap {
     static Employee employee1;
 
     public static void main(String[] args) {
+
         List<Employee> employeeList = Arrays.asList(new Employee(1, "Nahid", 20000),
+                new Employee(2, "Naimur", 30000), new Employee(3, "Joy", 25000),
+                new Employee(4, "Sabbir", 10000), new Employee(5, "Hridoy", 10000));
+
+        //find the list of employee which have salary below 18k
+        List<String> listOfName = employeeList.stream().filter(s -> s.salary < 18000).map(Employee::getName).collect(Collectors.toList());
+        System.out.println(listOfName);
+
+        //find the first employee which salary is below 18k
+        String nameList = employeeList.stream().filter(s -> s.salary < 18000).map(Employee::getName).findFirst().get();
+        System.out.println(nameList);
+
+        //all employees total salary
+        int total_salary = employeeList.stream().mapToInt(Employee::getSalary).sum();
+        System.out.println(total_salary);
+
+        //first map with groupingBy id how many user are same id and then sum total salary
+        List<Employee> employeeLists = Arrays.asList(new Employee(1, "Nahid", 20000),
                 new Employee(2, "Naimur", 30000),
                 new Employee(1, "Nahid", 25000),
                 new Employee(2, "Naimur", 10000),
                 new Employee(3, "Sabbir", 10000));
-
-        //find the first employee which salary is below 18k
-        //String nameList = employeeList.stream().filter(s -> s.salary <18000).map(Employee::getName).findFirst().get();
-
-        //all employees total salary
-        // int total_salary = employeeList.stream().mapToInt(Employee::getSalary).sum();
-
-        //first map with groupingBy id how many user are same id and then sum total salary
-        Map<Integer, List<Employee>> employee = employeeList.stream().collect(Collectors.groupingBy(Employee::getId));
+        Map<Integer, List<Employee>> employee = employeeLists.stream().collect(Collectors.groupingBy(Employee::getId));
 
         List<Employee> newEmployee = new ArrayList<>();
 
@@ -82,7 +92,7 @@ public class FilterWithMap {
         System.out.println(newEmployee);
 
         //how many employee are same name
-        Map<String,Long> sameName = employeeList.stream().collect(Collectors.groupingBy(Employee::getName,Collectors.counting()));
+        Map<String, Long> sameName = employeeLists.stream().collect(Collectors.groupingBy(Employee::getName, Collectors.counting()));
         System.out.println(sameName);
     }
 }
